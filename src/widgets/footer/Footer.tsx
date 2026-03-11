@@ -8,37 +8,37 @@ export function Footer() {
                     <h2 className="footer__social__title">I am on social <br /> media.</h2>
                     <ul className="footer__social__list">
                         <li className="footer__social__item">
-                            <a className="footer__social__item__link" href="https://www.google.com/search?q=gemini&oq=&gs_lcrp=EgZjaHJvbWUqDwgAECMYJxjqAhiABBiKBTIPCAAQIxgnGOoCGIAEGIoFMg8IARAjGCcY6gIY8AUYngYyDwgCECMYJxjqAhiABBiKBTIPCAMQIxgnGOoCGIAEGIoFMhUIBBAjGCcY6gIYgAQYigUY8AUYngYyDwgFECMYJxjqAhiABBiKBTIPCAYQIxgnGOoCGIAEGIoFMg8IBxAjGCcY6gIYgAQYigXSAQo3ODc5MTFqMGo3qAIIsAIB8QVxR8A8GsDUFfEFcUfAPBrA1BU&sourceid=chrome&ie=UTF-8">
+                            <a className="footer__social__item__link" href="https://t.me/Dima08112007">
                                 <svg className="footer__social__item__svg">
-                                    <use href="/icons/symbol-defs.svg#icon-telegram"></use>
+                                    <use href="./icons/symbol-defs.svg#icon-telegram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li className="footer__social__item">
-                            <a className="footer__social__item__link" href="https://www.google.com/search?q=gemini&oq=&gs_lcrp=EgZjaHJvbWUqDwgAECMYJxjqAhiABBiKBTIPCAAQIxgnGOoCGIAEGIoFMg8IARAjGCcY6gIY8AUYngYyDwgCECMYJxjqAhiABBiKBTIPCAMQIxgnGOoCGIAEGIoFMhUIBBAjGCcY6gIYgAQYigUY8AUYngYyDwgFECMYJxjqAhiABBiKBTIPCAYQIxgnGOoCGIAEGIoFMg8IBxAjGCcY6gIYgAQYigXSAQo3ODc5MTFqMGo3qAIIsAIB8QVxR8A8GsDUFfEFcUfAPBrA1BU&sourceid=chrome&ie=UTF-8">
+                            <a className="footer__social__item__link" href="mailto:dimagolovatuk80@gmail.com">
                                 <svg className="footer__social__item__svg">
-                                    <use href="/icons/symbol-defs.svg#icon-mail"></use>
+                                    <use href="./icons/symbol-defs.svg#icon-mail"></use>
                                 </svg>
                             </a>
                         </li>
                         <li className="footer__social__item">
-                            <a className="footer__social__item__link" href="https://www.google.com/search?q=gemini&oq=&gs_lcrp=EgZjaHJvbWUqDwgAECMYJxjqAhiABBiKBTIPCAAQIxgnGOoCGIAEGIoFMg8IARAjGCcY6gIY8AUYngYyDwgCECMYJxjqAhiABBiKBTIPCAMQIxgnGOoCGIAEGIoFMhUIBBAjGCcY6gIYgAQYigUY8AUYngYyDwgFECMYJxjqAhiABBiKBTIPCAYQIxgnGOoCGIAEGIoFMg8IBxAjGCcY6gIYgAQYigXSAQo3ODc5MTFqMGo3qAIIsAIB8QVxR8A8GsDUFfEFcUfAPBrA1BU&sourceid=chrome&ie=UTF-8">
+                            <a className="footer__social__item__link" href="">
                                 <svg className="footer__social__item__svg">
-                                    <use href="/icons/symbol-defs.svg#icon-steam"></use>
+                                    <use href="./icons/symbol-defs.svg#icon-steam"></use>
                                 </svg>
                             </a>
                         </li>
                         <li className="footer__social__item">
-                            <a className="footer__social__item__link" href="https://www.google.com/search?q=gemini&oq=&gs_lcrp=EgZjaHJvbWUqDwgAECMYJxjqAhiABBiKBTIPCAAQIxgnGOoCGIAEGIoFMg8IARAjGCcY6gIY8AUYngYyDwgCECMYJxjqAhiABBiKBTIPCAMQIxgnGOoCGIAEGIoFMhUIBBAjGCcY6gIYgAQYigUY8AUYngYyDwgFECMYJxjqAhiABBiKBTIPCAYQIxgnGOoCGIAEGIoFMg8IBxAjGCcY6gIYgAQYigXSAQo3ODc5MTFqMGo3qAIIsAIB8QVxR8A8GsDUFfEFcUfAPBrA1BU&sourceid=chrome&ie=UTF-8">
+                            <a className="footer__social__item__link" href="https://github.com/Dima-Golovatuk1">
                                 <svg className="footer__social__item__svg">
-                                    <use href="/icons/symbol-defs.svg#icon-github"></use>
+                                    <use href="./icons/symbol-defs.svg#icon-github"></use>
                                 </svg>
                             </a>
                         </li>
                         <li className="footer__social__item">
-                            <a className="footer__social__item__link" href="https://www.google.com/search?q=gemini&oq=&gs_lcrp=EgZjaHJvbWUqDwgAECMYJxjqAhiABBiKBTIPCAAQIxgnGOoCGIAEGIoFMg8IARAjGCcY6gIY8AUYngYyDwgCECMYJxjqAhiABBiKBTIPCAMQIxgnGOoCGIAEGIoFMhUIBBAjGCcY6gIYgAQYigUY8AUYngYyDwgFECMYJxjqAhiABBiKBTIPCAYQIxgnGOoCGIAEGIoFMg8IBxAjGCcY6gIYgAQYigXSAQo3ODc5MTFqMGo3qAIIsAIB8QVxR8A8GsDUFfEFcUfAPBrA1BU&sourceid=chrome&ie=UTF-8">
+                            <a className="footer__social__item__link" href="https://www.linkedin.com/in/dmytro-holovatyuk-23b12a353/">
                                 <svg className="footer__social__item__svg">
-                                    <use href="/icons/symbol-defs.svg#icon-linkedin"></use>
+                                    <use href="./icons/symbol-defs.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
                         </li>

@@ -11,12 +11,12 @@ import { Home, Posts } from 'pages/index'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     {/* <Provider store={store}> */}
-      <BrowserRouter>
+      <BrowserRouter basename="/FunnyPosts">
       <Header/>
 
         <main>
           <Routes>
-              <Route path='' element={<Home/>} />
+              <Route path='/' element={<Home/>} />
               <Route path='/posts' element={<Posts/>} />
           </Routes>
         </main>

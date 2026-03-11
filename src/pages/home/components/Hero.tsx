@@ -14,7 +14,7 @@ export function Hero() {
                     <Link to="/posts">
                         <button className={styles.hero__btn}>Explore Posts
                             <svg className={styles.hero__btn__svg}>
-                                <use href="/icons/symbol-defs.svg#icon-arrow-right" />
+                                <use href="./icons/symbol-defs.svg#icon-arrow-right" />
                             </svg>
                         </button>
                     </Link>
