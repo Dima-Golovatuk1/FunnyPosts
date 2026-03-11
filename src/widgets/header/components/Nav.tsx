@@ -8,7 +8,7 @@ export function Nav({ isOpen, setIsOpen }: Props) {
         <>
             <button className={styles.headerMobile__btnOpen} onClick={() => { setIsOpen(!isOpen) }}>
                 <svg className={styles.headerMobile__btnOpen__icon}>
-                    <use href="/icons/symbol-defs.svg#icon-mobile-menu"></use>
+                    <use href="./icons/symbol-defs.svg#icon-mobile-menu"></use>
                 </svg>
             </button>
 
