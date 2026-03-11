@@ -11,7 +11,7 @@ import { Home, Posts } from 'pages/index'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     {/* <Provider store={store}> */}
-      <BrowserRouter basename="/FunnyPosts">
+      <BrowserRouter basename="/FunnyPosts/">
       <Header/>
 
         <main>
