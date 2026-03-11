@@ -15,7 +15,7 @@ export function Nav({ isOpen, setIsOpen }: Props) {
             <div className={`${styles.header__MobileMenu} ${isOpen ? '' : styles.is_hidden}`}>
                 <button className={styles.headerMobile__btnClose} onClick={() => { setIsOpen(!isOpen) }}>
                     <svg className={styles.headerMobile__btnClose__icon}>
-                        <use href="/icons/symbol-defs.svg#icon-close" />
+                        <use href="./icons/symbol-defs.svg#icon-close" />
                     </svg>
                 </button>
                 <nav className={styles.header__nav}>
