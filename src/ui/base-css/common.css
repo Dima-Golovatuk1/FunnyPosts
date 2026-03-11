@@ -1,27 +1,25 @@
-main{
-    background-color: var(--background-color-first);
+main {
     color: var(--text-color);
 }
 
 
-.container{
+.container {
     width: 320px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: var(--background-color-second);
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 
 @media screen and (min-width: 768px) {
-    .container{
-    width: 768px;
+    .container {
+        width: 768px;
     }
 }
 
 
 @media screen and (min-width: 1200px) {
-    .container{
-    width: 1200px;
+    .container {
+        width: 1200px;
     }
 }

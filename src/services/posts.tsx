@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { getPosts } from "../api/posts"
+import { getPosts } from "../api/posts.ts"
 import type { Posts } from "../types/api/posts.ts"
 
 export const usePosts = () => {

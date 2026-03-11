@@ -3,16 +3,10 @@ import { createRoot } from 'react-dom/client'
 // import { Provider } from 'react-redux'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 
-import '@a1rth/css-normalize'
-import './ui/base-css/reset.css'
-import './ui/base-css/common.css'
-import './ui/base-css/vars.css'
+import './ui/base-css/index'
 
-import { Header } from 'ui/layout/Header'
-import { Footer } from 'ui/layout/Footer'
-
-import { Home } from 'ui/pages/home/Home'
-import { Posts } from 'ui/pages/posts/Posts'
+import { Header, Footer } from 'widgets/index'
+import { Home, Posts } from 'pages/index'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

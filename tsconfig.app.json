@@ -11,11 +11,13 @@
     "baseUrl": "src",
     "paths": {
       "api/*": ["api/*"],
-      "bbl/*": ["bbl/*"],
       "hooks/*": ["hooks/*"],
+      "pages/*": ["pages/*"],
+      "services/*": ["services/*"],
       "store/*": ["store/*"],
       "types/*": ["types/*"],
       "ui/*": ["ui/*"],
+      "widgets/*": ["widgets"],
     },
 
     /* Bundler mode */

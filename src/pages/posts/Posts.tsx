@@ -1,5 +1,5 @@
-import { usePosts } from "../../../bll/posts";
-import type { Posts } from "../../../types/api/posts";
+import { usePosts } from "../../services/posts";
+import type { Posts } from "../../types/api/posts";
 
 
 export function Posts() {

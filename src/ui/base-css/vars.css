@@ -1,12 +1,12 @@
 :root{
     --title-color: #000000;
-    --text-color: #71717A;
-    --text-hover-color: #7e7e8d;
+    --text-color: #4b4b4b;
+    --hover-text-color: #000000;
     --background-color-first: #fff;
-    --background-color-second: #FAFAFA;
+    --background-color-second: #fbfbfb;
     --hero-background-color: #989898;
     --btn-color: #18181B;
-    --hover-btn-color: #212125;
+    --hover-btn-color: #2a2a30;
     --btn-text-color: #fff;
     --box-shadow-color: #3b3b3b;
 }
