@@ -1,4 +1,4 @@
-import { data, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useGetPost } from "../services/post.service";
 import { MediaSlider } from "./MediaSlider";
 import { AiOutlineLike, AiFillLike, AiOutlineComment } from "react-icons/ai";
@@ -18,7 +18,7 @@ export function ShowInfo({ id }: ShowInfoProps) {
 
     const { data: hasLike } = useIsHasLike(id);
 
-    const { sendLike, sendLikeData, status: statusLike } = useSendLike(id)
+    const { sendLike, status: statusLike } = useSendLike(id)
 
     if (isPostLoading) {
         return (

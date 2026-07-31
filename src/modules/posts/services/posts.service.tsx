@@ -1,4 +1,4 @@
-import { useInfiniteQuery, useQueries, useQuery } from "@tanstack/react-query";
+import { useInfiniteQuery } from "@tanstack/react-query";
 import { getPosts } from "../api/posts.api";
 
 export function usePosts  (limit: number = 10) {
