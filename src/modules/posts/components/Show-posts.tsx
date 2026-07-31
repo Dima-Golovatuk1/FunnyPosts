@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { usePosts } from "../services/posts.service";
 import { Link } from "react-router-dom";
 
-import styles from'./Show-posts.module.css';
+import styles from'./show-posts.module.css';
 
 export function ShowPosts() {
     const {
