@@ -4,18 +4,20 @@ import type { Props } from "../types"
 import styles from "./nav.module.css"
 
 export function Nav({ isOpen, setIsOpen }: Props) {
+    const sprite = `${import.meta.env.BASE_URL}icons/symbol-defs.svg`;
+
     return (
         <>
             <button className={styles.headerMobile__btnOpen} onClick={() => { setIsOpen(!isOpen) }}>
                 <svg className={styles.headerMobile__btnOpen__icon}>
-                    <use href="./icons/symbol-defs.svg#icon-mobile-menu"></use>
+                    <use href={`${sprite}#icon-mobile-menu`}></use>
                 </svg>
             </button>
 
             <div className={`${styles.header__MobileMenu} ${isOpen ? '' : styles.is_hidden}`}>
                 <button className={styles.headerMobile__btnClose} onClick={() => { setIsOpen(!isOpen) }}>
                     <svg className={styles.headerMobile__btnClose__icon}>
-                        <use href="./icons/symbol-defs.svg#icon-close" />
+                        <use href={`${sprite}#icon-close`} />
                     </svg>
                 </button>
                 <nav className={styles.header__nav}>

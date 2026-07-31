@@ -1,3 +1,3 @@
-export * from './home/Home'
-export * from './post/Post'
-export * from './posts/Posts'
+export * from './Home.page'
+export * from './Posts.page'
+export * from './InfoPost'

@@ -1,6 +1,8 @@
 import "./footer.css"
 
 export function Footer() {
+    const sprite = `${import.meta.env.BASE_URL}icons/symbol-defs.svg`;
+
     return (
         <footer className="footer">
             <div className="container">
@@ -10,35 +12,35 @@ export function Footer() {
                         <li className="footer__social__item">
                             <a className="footer__social__item__link" href="https://t.me/Dima08112007">
                                 <svg className="footer__social__item__svg">
-                                    <use href="./icons/symbol-defs.svg#icon-telegram"></use>
+                                    <use href={`${sprite}#icon-telegram`} />
                                 </svg>
                             </a>
                         </li>
                         <li className="footer__social__item">
                             <a className="footer__social__item__link" href="mailto:dimagolovatuk80@gmail.com">
                                 <svg className="footer__social__item__svg">
-                                    <use href="./icons/symbol-defs.svg#icon-mail"></use>
+                                    <use href={`${sprite}#icon-mail`}></use>
                                 </svg>
                             </a>
                         </li>
                         <li className="footer__social__item">
                             <a className="footer__social__item__link" href="">
                                 <svg className="footer__social__item__svg">
-                                    <use href="./icons/symbol-defs.svg#icon-steam"></use>
+                                    <use href={`${sprite}#icon-steam`}></use>
                                 </svg>
                             </a>
                         </li>
                         <li className="footer__social__item">
                             <a className="footer__social__item__link" href="https://github.com/Dima-Golovatuk1">
                                 <svg className="footer__social__item__svg">
-                                    <use href="./icons/symbol-defs.svg#icon-github"></use>
+                                    <use href={`${sprite}#icon-github`}></use>
                                 </svg>
                             </a>
                         </li>
                         <li className="footer__social__item">
                             <a className="footer__social__item__link" href="https://www.linkedin.com/in/dmytro-holovatyuk-23b12a353/">
                                 <svg className="footer__social__item__svg">
-                                    <use href="./icons/symbol-defs.svg#icon-linkedin"></use>
+                                    <use href={`${sprite}#icon-linkedin`}></use>
                                 </svg>
                             </a>
                         </li>

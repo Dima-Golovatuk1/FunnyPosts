@@ -13,10 +13,20 @@ const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(file
 export default defineConfig({
   base: '/FunnyPosts/',
   plugins: [react()],
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:4000',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    },
+  },
   resolve: {
     alias: {
       api: "/src/api",
       hooks: "/src/hooks",
+      modules: "/src/modules",
       pages: "/src/pages",
       services: "/src/services",
       store: "/src/store",
