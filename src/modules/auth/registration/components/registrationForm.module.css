@@ -182,6 +182,7 @@
         display: block;
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -189,11 +190,10 @@
 @media screen and (min-width: 1200px) {
 
     .registration {
-        padding: 60px 0;
+        padding: 60px 70px;
     }
 
     .registration :global(.container) {
-        padding: 70px;
         max-width: 1400px;
     }
 
