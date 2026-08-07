@@ -25,6 +25,10 @@ export function RegistrationForm() {
             passwordRepeat,
         };
 
+        if (password != passwordRepeat){
+            setErrorText('password do not match')
+        }
+
         console.log(data);
     };
 
