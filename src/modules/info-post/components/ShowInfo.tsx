@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import { useGetPost } from "../services/post.service";
 import { MediaSlider } from "./MediaSlider";
+import { Comment } from "./Comment";
 import { AiOutlineLike, AiFillLike, AiOutlineComment } from "react-icons/ai";
 
 
 import styles from './showInfo.module.css'
 import { useIsHasLike } from "../services/isHasLike.service";
 import { useSendLike } from "../services/sendLike.service";
+import { useState } from "react";
 
 interface ShowInfoProps {
     id: string;
@@ -19,6 +21,8 @@ export function ShowInfo({ id }: ShowInfoProps) {
     const { data: hasLike } = useIsHasLike(id);
 
     const { sendLike, status: statusLike } = useSendLike(id)
+
+    const [isOpenComments, setIsOpenComments] = useState(false)
 
     if (isPostLoading) {
         return (
@@ -56,7 +60,7 @@ export function ShowInfo({ id }: ShowInfoProps) {
                             ? <AiFillLike className={`${styles.like__btn} ${styles.tools__div__dtn}`} />
                             : <AiOutlineLike className={`${styles.like__btn} ${styles.tools__div__dtn}`} />}
                     </button>
-                    <button>
+                    <button onClick={() => setIsOpenComments(!isOpenComments)}>
                         <AiOutlineComment className={`${styles.like__btn} ${styles.tools__div__dtn}`} />
                     </button>
                     <Link className={styles.post__author} to={``}>
@@ -64,6 +68,13 @@ export function ShowInfo({ id }: ShowInfoProps) {
                     </Link>
                 </div>
             </div>
+            {isOpenComments && (
+                <div className={styles.post__comments__div}>
+                    <div className={styles.post__comments}>
+                        <Comment postId={id} setIsOpenComments={setIsOpenComments}/>
+                    </div>
+                </div>
+            )}
         </section>
     )
 }
