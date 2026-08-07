@@ -17,7 +17,7 @@ export function Comment({ postId, setIsOpenComments }: CommentProps) {
 
     const [textComment, setTextComment] = useState("");
 
-    const { sendComment, status: statusComment } = useSendComment(postId, textComment)
+    const { sendComment} = useSendComment(postId, textComment)
 
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
