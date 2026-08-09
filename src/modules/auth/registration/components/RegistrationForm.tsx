@@ -6,8 +6,17 @@ import formImg from "../../assets/form.jpg";
 import { Input } from "ui/components";
 
 import styles from "./registrationForm.module.css";
+import { registrationSchema } from "../schemas/registration.schema";
+import { useRegistration } from "../service/registration.service";
 
 export function RegistrationForm() {
+    const {
+        registration,
+        error,
+        isSuccess,
+        isPending,
+    } = useRegistration();
+
     const [errorText, setErrorText] = useState("");
 
     const [name, setName] = useState("");
@@ -18,6 +27,8 @@ export function RegistrationForm() {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
+        setErrorText("");
+
         const data = {
             name,
             email,
@@ -25,12 +36,17 @@ export function RegistrationForm() {
             passwordRepeat,
         };
 
-        if (password != passwordRepeat){
-            setErrorText('password do not match')
+        const result = registrationSchema.safeParse(data);
+
+        if (!result.success) {
+            setErrorText(result.error.issues[0].message);
+            return;
         }
 
-        console.log(data);
+        registration(result.data);
     };
+
+
 
     return (
         <section className={styles.registration}>
@@ -135,9 +151,29 @@ export function RegistrationForm() {
                             </li>
                         </ul>
 
-                        <p className={styles.registration__error}>
-                            {errorText}
-                        </p>
+                        {isPending && (
+                            <p>
+                                Loading...
+                            </p>
+                        )}
+
+                        {errorText && (
+                            <p className={styles.registration__error}>
+                                {errorText}
+                            </p>
+                        )}
+
+                        {error && (
+                            <p className={styles.registration__error}>
+                                {error.message}
+                            </p>
+                        )}
+
+                        {isSuccess && (
+                            <p className={styles.registration__message}>
+                                Registration successful! Check your email to verify your account.
+                            </p>
+                        )}
 
                         <button
                             className={styles.registration__button}
