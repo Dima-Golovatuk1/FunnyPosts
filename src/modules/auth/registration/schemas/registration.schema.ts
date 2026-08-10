@@ -10,9 +10,8 @@ export const registrationSchema: z.ZodType<RegistrationData> = z.object({
         .max(60, "Name must have max 60 symbols")
         .regex(/^\S+$/, "Spaces are not allowed"),
     email: z
-        .string()
-        .nonempty("Email is required")
-        .email("Invalid email"),
+        .email("Invalid email")
+        .nonempty("Email is required"),
     password: z
         .string()
         .nonempty("Password is required")

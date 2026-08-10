@@ -8,6 +8,7 @@ import { Input } from "ui/components";
 import styles from "./registrationForm.module.css";
 import { registrationSchema } from "../schemas/registration.schema";
 import { useRegistration } from "../service/registration.service";
+import { AiFillGoogleSquare } from "react-icons/ai";
 
 export function RegistrationForm() {
     const {
@@ -178,19 +179,31 @@ export function RegistrationForm() {
                         <button
                             className={styles.registration__button}
                             type="submit"
+                            disabled={isPending}
                         >
-                            Create account
+                            {isPending
+                                ? "Create account in..."
+                                : "Create account"}
+                            
                         </button>
                     </form>
 
-                    <p className={styles.registration__login}>
-                        Already have an account?{" "}
+                    <div className={styles.other__methods}>
+                        <p className={styles.registration__login}>
+                            Already have an account?{" "}
+                            <Link
+                                className={styles.registration__login__link}
+                                to="/auth/login" >
+                                Login
+                            </Link>
+                        </p>
                         <Link
                             className={styles.registration__login__link}
-                            to="/auth/login" >
-                            Login
+                            to={'http://localhost:4000/oauth/google'}>
+                            <AiFillGoogleSquare className={styles.registration__login__link__icon} />
                         </Link>
-                    </p>
+                    </div>
+
                 </div>
 
                 <img

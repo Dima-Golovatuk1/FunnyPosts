@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './ui/base-css/index'
 
 import { Header, Footer } from 'widgets/index'
-import { Home, Posts, InfoPost, Registration } from 'pages/index'
+import { Home, Posts, InfoPost, Registration, Login } from 'pages/index'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 const queryClient = new QueryClient()
@@ -26,6 +26,7 @@ createRoot(document.getElementById('root')!).render(
 
                         {/* AUTH */}
                         <Route path='/auth/registration' element={<Registration/>}/>
+                        <Route path='/auth/login' element={<Login/>}/>
                     </Routes>
                 </main>
 
