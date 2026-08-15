@@ -1,3 +1,3 @@
-interface IsAuth {
-    auth: boolean
-}
+// interface IsAuth {
+//     auth: boolean
+// }
