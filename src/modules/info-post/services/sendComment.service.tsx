@@ -20,7 +20,7 @@ export function useSendComment(postId: string, comment: string) {
     })
 
     if (error?.message === "UNAUTHORIZED") {
-        navigate("/auth");
+        navigate("/auth/registration");
     }
 
     return {

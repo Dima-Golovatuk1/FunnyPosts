@@ -1,0 +1,3 @@
+interface IsAuth {
+    auth: boolean
+}

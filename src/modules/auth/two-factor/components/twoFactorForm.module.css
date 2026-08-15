@@ -1,0 +1,219 @@
+.twoFactor {
+    padding: 0 10px;
+}
+
+.twoFactor :global(.container) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 16px;
+    background-color: var(--background-color-first);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+.twoFactor__content {
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+}
+
+
+.twoFactor__title {
+    margin-bottom: 10px;
+    color: var(--title-color);
+    font-size: 32px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+
+.twoFactor__subtitle {
+    margin-bottom: 5px;
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+.twoFactor__email {
+    margin-bottom: 35px;
+    color: var(--title-color);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+
+.twoFactor__form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.twoFactor__code {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.twoFactor__input {
+    width: 42px;
+    height: 52px;
+    border-radius: 10px;
+    font-size: 22px;
+    border: 1px solid #d8d8d8;
+    outline: none;
+    background-color: var(--background-color-first);
+    color: var(--title-color);
+    font-weight: 600;
+    text-align: center;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.twoFactor__input:focus {
+    border-color: var(--btn-color);
+    box-shadow:
+        0 0 0 3px rgba(24, 24, 27, 0.08);
+    transform: translateY(-2px);
+}
+
+
+.twoFactor__button {
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    font-size: 15px;
+    font-weight: 600;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+.twoFactor__button:hover:not(:disabled) {
+    background-color: var(--hover-btn-color);
+}
+
+
+.twoFactor__button:active:not(:disabled) {
+    transform: scale(0.98);
+}
+
+
+.twoFactor__button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+
+.twoFactor__hint {
+    margin-top: 25px;
+    color: var(--text-color);
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .twoFactor {
+        padding: 40px 0;
+    }
+
+    .twoFactor :global(.container) {
+        border-radius: 20px;
+    }
+
+    .twoFactor__content {
+        padding: 70px 50px;
+    }
+
+    .twoFactor__title {
+        font-size: 40px;
+    }
+
+    .twoFactor__subtitle {
+        font-size: 16px;
+    }
+
+    .twoFactor__input {
+        width: 58px;
+        height: 68px;
+        font-size: 28px;
+    }
+
+    .twoFactor__code {
+        gap: 12px;
+    }
+
+    .twoFactor__button {
+        height: 52px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .twoFactor {
+        padding: 40px;
+    }
+
+    .twoFactor :global(.container) {
+        min-height: 550px;
+
+        border-radius: 24px;
+    }
+
+    .twoFactor__content {
+        justify-content: center;
+
+        padding: 70px;
+    }
+
+    .twoFactor__title {
+        font-size: 42px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .twoFactor {
+        padding: 60px 70px;
+    }
+
+    .twoFactor :global(.container) {
+        max-width: 1400px;
+    }
+
+    .twoFactor__title {
+        font-size: 46px;
+    }
+
+    .twoFactor__input {
+        width: 64px;
+        height: 72px;
+
+        font-size: 30px;
+    }
+
+    .twoFactor__code {
+        gap: 14px;
+    }
+
+    .twoFactor__button {
+        height: 54px;
+    }
+}
