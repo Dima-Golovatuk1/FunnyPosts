@@ -32,7 +32,7 @@ export function Nav({ isOpen, setIsOpen }: Props) {
                             <Link to={'/'} className={styles.header__nav__item__link}>Messaging</Link>
                         </li>
                         <li className={styles.header__nav__item}>
-                            <Link to={'/'} className={styles.header__nav__item__link}>Profile</Link>
+                            <Link to={'/user/profile'} className={styles.header__nav__item__link}>Profile</Link>
                         </li>
                     </ul>
                 </nav>

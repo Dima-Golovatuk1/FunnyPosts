@@ -9,7 +9,6 @@ export function ShowPosts() {
         posts,
         isLoading,
         isError,
-        error,
         hasNextPage,
         isFetchingNextPage,
         fetchNextPage,
@@ -44,7 +43,6 @@ export function ShowPosts() {
     }, [hasNextPage, isFetchingNextPage, fetchNextPage]);
 
     if (isError) {
-        console.error(error);
         return (
             <section className={styles.posts_status}>
                 <p>Error loading posts</p>
